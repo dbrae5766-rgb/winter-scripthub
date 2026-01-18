@@ -129,10 +129,22 @@
        .scripts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 10px;
     overflow-y: auto;
     padding-right: 4px;
     flex: 1;
+    align-content: start;
+}
+
+.script-card {
+    background: rgb(30, 30, 30);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: 1px solid rgb(42, 42, 42);
+    min-width: 0;
+    width: 100%;
 }
 
         .scripts-grid::-webkit-scrollbar {
@@ -148,15 +160,7 @@
             border-radius: 3px;
         }
 
-        .script-card {
-            background: rgb(30, 30, 30);
-            border-radius: 6px;
-            overflow: hidden;
-            transition: all 0.2s;
-            cursor: pointer;
-            border: 1px solid rgb(42, 42, 42);
-            height: fit-content;
-        }
+        
 
         .script-card:hover {
             transform: translateY(-2px);
